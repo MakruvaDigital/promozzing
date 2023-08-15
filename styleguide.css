@@ -1,0 +1,11 @@
+:root {
+  --gray-3-dark: rgba(72, 72, 74, 1);
+  --subhead-font-family: "SFPro-Regular", Helvetica;
+  --subhead-font-size: 15px;
+  --subhead-font-style: normal;
+  --subhead-font-weight: 400;
+  --subhead-letter-spacing: 0px;
+  --subhead-line-height: normal;
+  --textcolor: rgba(158, 158, 158, 1);
+  --white: rgba(255, 255, 255, 1);
+}
