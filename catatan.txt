@@ -1,0 +1,63 @@
+#get request token
+url: https://api.k-link.dev/api/auth/login
+method: post
+{
+    "username":"app.akademiInspiRadzi",
+    "password":"app.akademiInspiRadzi@181022"
+}
+
+#respon request token
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjY1ODQ3OTIsImV4cCI6MTY2NjU4NDg1Mn0.mKkI7SwbhkDGoViNB4QhMs7gDFz4WpVjY06AkSUK6Tk",
+    "data": {
+        "username": "app.akademiInspiRadzi",
+        "notes": "Aplikasi Akademi Inspiradzi"
+    }
+}
+
+#get request member login 
+curl --location --request POST 'https://api.k-link.dev/api/v.1/login' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjYwNjMzNTAsImV4cCI6MTY2NjA2MzQxMH0.WxToq-pHkApGUMZ3hNAU9PAw-59tNoVWmWAAhCV3sMo' \
+--data-raw '{
+    "dfno": "IDJRBBA28648",
+    "password": "140320"
+}'
+
+#respon request member login 
+{
+    "status": "success",
+    "message": "",
+    "data": {
+        "dfno": "IDSPAAB011",
+        "fullnm": "DION RESPATI",
+        "idno": "099889900YAA",
+        "sfno": "IDSPAAA66834",
+        "fullnm_sp": "JHON DOE",
+        "sfno_reg": "IDSPAAA66834",
+        "fullnm_rec": "JHON DOE",
+        "sex": "M",
+        "tel_hp": "09998131",
+        "email": "asd@asd.asda",
+        "addr1": "JL KERAWANG NO 45",
+        "addr2": "",
+        "addr3": "",
+        "city": null,
+        "rank": "01",
+        "shortnm": null,
+        "percentage": 0,
+        "bankid": "BCA",
+        "bankaccno": "13123123123",
+        "bankaccnm": "ADASDA",
+        "virtual_account": "154793657",
+        "password": "01011980",
+        "birthdt": "01/01/1980",
+        "bd_now": "29/12/2022",
+        "bd_exp_date": "05/01/2023",
+        "joindt": "22/01/2018",
+        "distributor": 1,
+        "mobile_sc": 0,
+        "sub_sc": 0,
+        "stockist_sc": 0
+    }
+}
